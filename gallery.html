@@ -74,6 +74,7 @@
 
 
     
+<!-- Gallery Section -->
 
     <!-- Gallery Section -->
     <section id="gallery" class="gallery-section">
@@ -254,30 +255,39 @@
 
 
       <!--Managing slides arrows "of gallery" on-pressed action-->
-  <script>
-
-    function moveSlide(button, direction) {
-      const slider = button.parentElement.querySelector('.slides');
-      const slides = slider.children;
-      const slideWidth = slides[0].offsetWidth;
-      const currentTransform = getComputedStyle(slider).transform;
-      let translateX = currentTransform !== 'none' ? parseInt(currentTransform.split(',')[4]) : 0;
-
-      const maxOffset = -slideWidth * (slides.length - 1);
-
-      translateX += direction * slideWidth;
-
-      // Prevent sliding out of bounds
-      if (translateX > 0) {
-        translateX = 0;
-      } else if (translateX < maxOffset) {
-        translateX = maxOffset;
-      }
-
-      slider.style.transform = `translateX(${translateX}px)`;
-    }
-
-  </script>
+      <script>
+        function moveSlide(button, direction) {
+          const slider = button.parentElement.querySelector('.slides');
+          slide(slider, direction);
+        }
+      
+        function slide(slider, direction) {
+          const slides = slider.children;
+          const slideWidth = slides[0].offsetWidth;
+          const currentTransform = getComputedStyle(slider).transform;
+          let translateX = currentTransform !== 'none' ? parseInt(currentTransform.split(',')[4]) : 0;
+      
+          const maxOffset = -slideWidth * (slides.length - 1);
+          translateX += direction * slideWidth;
+      
+          if (translateX > 0) {
+            translateX = maxOffset;
+          } else if (translateX < maxOffset) {
+            translateX = 0;
+          }
+      
+          slider.style.transform = `translateX(${translateX}px)`;
+        }
+      
+        document.addEventListener("DOMContentLoaded", function () {
+          const sliders = document.querySelectorAll(".slides");
+          sliders.forEach(slider => {
+            setInterval(() => {
+              slide(slider, 1);
+            }, 3000); // Auto-slide every 3 seconds
+          });
+        });
+      </script>
 
 
 

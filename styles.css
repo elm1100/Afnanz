@@ -793,6 +793,10 @@ h2 {
 
   width: 150px;
   height: auto;
+  background-color: #bbb9b961;
+  transition: 3s;
+  border-radius: 70%;
+
 }
 
 
