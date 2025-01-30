@@ -74,14 +74,14 @@
 
       <img src="photos/icon.png" class="welcome-icon">
 
-      <h1 class="wel-h1">Welcome to Your Dream Events</h1>
+      <h1 data-en="Welcome to Your Dream Events" data-ar="مرحبًا بك في فعاليات أحلامك">Welcome to Your Dream Events</h1>
       <p>Let us help you create your perfect day.</p>
       <br>
       
       <!--<img src="photos/icon.png" class="welcome-icon">-->
 
 
-      <video  class="wel-vid" width="100%" height="70%" autoplay muted loop>
+      <video  class="wel-vid" width="100%" height="70%" autoplay muted playsinline loop>
         <source src="photos/wel-vid.MOV" type="video/mp4" class="wel-vid">
         Your browser does not support the video tag.
       </video>
@@ -135,6 +135,7 @@
       <p style="font-family:-apple-system, BlinkMacSystemFont; text-transform: none;" >&copy; 2025 Afnanz. All Rights Reserved.</p>
       <a href="https://elm1100.github.io/eResume/"><img src="photos/elm.png" class="elm"></a>
       <p class="e-name" > Developed by : Elham Alsuyyan</p>
+      <button id="language-toggle">Switch to Arabic</button>
     </footer>
 
     <!-- ################################Footer-end####################################################### -->
@@ -204,6 +205,25 @@
     }
 
   </script>
+
+<script>
+  document.getElementById("language-toggle").addEventListener("click", function () {
+    const htmlElement = document.documentElement;
+    const elementsToTranslate = document.querySelectorAll("[data-en]");
+
+    if (htmlElement.lang === "en") {
+      htmlElement.lang = "ar";
+      document.body.dir = "rtl";
+      this.textContent = "التبديل إلى الإنجليزية";
+      elementsToTranslate.forEach(el => el.innerHTML = el.getAttribute("data-ar"));
+    } else {
+      htmlElement.lang = "en";
+      document.body.dir = "ltr";
+      this.textContent = "Switch to Arabic";
+      elementsToTranslate.forEach(el => el.innerHTML = el.getAttribute("data-en"));
+    }
+  });
+</script>
 
 
 
