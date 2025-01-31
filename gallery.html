@@ -25,8 +25,42 @@
 
 
 
+<link rel="icon" href="photos/icon2.png">
 
 
+<style>
+  body {
+      font-family: Arial, sans-serif;
+      text-align: center;
+  }
+  .grid-container {
+      display: grid;
+      grid-template-columns: repeat(2, 1fr);
+      gap: 20px;
+      padding: 20px;
+      max-width: 800px;
+      margin: auto;
+  }
+  .grid-item {
+      text-align: center;
+      background: #e0dee0;
+      box-shadow: none;
+      border-radius: 0px;
+  }
+  .grid-item img {
+      width: 100%;
+      border-radius: 10px;
+  }
+  .grid-item a {
+      display: block;
+      text-decoration: none;
+      color: black;
+      font-size:medium;
+      font-weight:lighter;
+      margin-top: 5px;
+  }
+ 
+</style>
 
 
 </head>
@@ -81,127 +115,48 @@
 
       <h1>Gallery</h1>
 
-      <div class="grid-container">
+      
+    <div class="grid-container">
 
-        <!-- Grid Item 1 -->
-        <div class="grid-item">
-          <div class="label">Entrances</div>
-          <div class="slider">
-            <div class="slides">
-              <img src="photos/img.png" alt="Image 1">
-              <img src="photos/icon.png" alt="Image 2">
-              <img src="photos/img.png" alt="Image 3">
-            </div>
-            <button class="arrow left" onclick="moveSlide(this, -1)">&#8592;</button>
-            <button class="arrow right" onclick="moveSlide(this, 1)">&#8594;</button>
-          </div>
-        </div>
-
-        <!-- Grid Item 2 -->
-        <div class="grid-item">
-          <div class="label">Bridal Dais</div>
-          <div class="slider">
-            <div class="slides">
-
-              <img src="photos/S/S14.JPG" >
-              <img src="photos/S/S2.JPG" >
-              <img src="photos/S/S3.JPG" >
-              <img src="photos/S/S4.JPEG" >
+      <div class="grid-item">
+          <a href="S.html">
               <img src="photos/S/S6.JPG" >
-              <img src="photos/S/S7.JPG" >
-              <img src="photos/S/S8.JPG" >
-              <img src="photos/S/S9.JPG" >
-              <img src="photos/S/S10.JPEG" >
-              <img src="photos/S/S11.jpg" >
-              <img src="photos/S/S12.JPG" >
-              <img src="photos/S/S13.JPG" >
-              <img src="photos/S/S14.JPG" >
-
-            </div>
-            <button class="arrow left" onclick="moveSlide(this, -1)">&#8592;</button>
-            <button class="arrow right" onclick="moveSlide(this, 1)">&#8594;</button>
-          </div>
-        </div>
-
-        <!-- Grid Item 3 -->
-        <div class="grid-item">
-          <div class="label">Bridal Bouquets</div>
-          <div class="slider">
-            <div class="slides">
-
-              <img src="photos/B/B9.jpg" alt="Image 5">
-              <img src="photos/B/B1.jpg" alt="Image 4">
-              <img src="photos/B/B2.jpg" alt="Image 5">
-              <img src="photos/B/B4.jpg" alt="Image 4">
-              <img src="photos/B/B7.jpg" alt="Image 5">
-              <img src="photos/B/B8.jpg" alt="Image 6">
-              <img src="photos/B/B10.jpg" alt="Image 6">
-              <img src="photos/B/B11.jpg" alt="Image 6">
-              <img src="photos/B/B13.jpg" alt="Image 6">
-              <img src="photos/B/B14.jpg" alt="Image 6">
-              <img src="photos/B/B16.jpg" alt="Image 6">
-              <img src="photos/B/B18.jpg" alt="Image 6">
-              
-            </div>
-            <button class="arrow left" onclick="moveSlide(this, -1)">&#8592;</button>
-            <button class="arrow right" onclick="moveSlide(this, 1)">&#8594;</button>
-          </div>
-        </div>
-
-        <!-- Grid Item 4 -->
-        <div class="grid-item">
-          <div class="label">Dinner</div>
-          <div class="slider">
-            <div class="slides">
-              <img src="photos/img.png" alt="Image 4">
-              <img src="photos/img.png" alt="Image 5">
-              <img src="photos/icon.png" alt="Image 6">
-            </div>
-            <button class="arrow left" onclick="moveSlide(this, -1)">&#8592;</button>
-            <button class="arrow right" onclick="moveSlide(this, 1)">&#8594;</button>
-          </div>
-        </div>
-
-         <!-- Grid Item 5 -->
-         <div class="grid-item">
-          <div class="label">Design</div>
-          <div class="slider">
-            <div class="slides">
-
-              <img src="photos/D/D27.JPG" alt="Image 5">
-              <img src="photos/D/D22.JPG" alt="Image 6">
-              <img src="photos/D/D.jpg" alt="Image 4">
-              <img src="photos/D/D2.jpg" alt="Image 5">
-              <img src="photos/D/D4.JPG" alt="Image 4">
-              <img src="photos/D/D5.JPG" alt="Image 5">
-              <img src="photos/D/D6.JPG" alt="Image 6">
-              <img src="photos/D/D7.JPG" alt="Image 4">
-              <img src="photos/D/D8.JPG" alt="Image 5">
-              <img src="photos/D/D10.JPG" alt="Image 6">
-              <img src="photos/D/D12.JPG" alt="Image 4">
-              <img src="photos/D/D13.JPG" alt="Image 5">
-              <img src="photos/D/D14.JPG" alt="Image 6">
-              <img src="photos/D/D16.JPG" alt="Image 4">
-              <img src="photos/D/D17.JPG" alt="Image 5">
-              <img src="photos/D/D18.JPG" alt="Image 6">
-              <img src="photos/D/D19.JPG" alt="Image 4">
-              <img src="photos/D/D20.JPG" alt="Image 5">
-              <img src="photos/D/D12.JPG" alt="Image 5">
-              <img src="photos/D/D22.JPG" alt="Image 6">
-              <img src="photos/D/D23.JPG" alt="Image 4">
-              <img src="photos/D/D24.JPG" alt="Image 5">
-              <img src="photos/D/D25.JPG" alt="Image 6">
-              <img src="photos/D/D26.JPG" alt="Image 4">
-              
-              <img src="photos/D/D28.JPG" alt="Image 6">
-
-            </div>
-            <button class="arrow left" onclick="moveSlide(this, -1)">&#8592;</button>
-            <button class="arrow right" onclick="moveSlide(this, 1)">&#8594;</button>
-          </div>
-        </div>
-
+              Bridal satges
+          </a>
       </div>
+
+      <div class="grid-item">
+          <a href="D.html">
+              <img src="photos/D/D10.JPG" >
+              Designs
+          </a>
+      </div>
+
+      <div class="grid-item">
+          <a href="B.html">
+              <img src="photos/B/B1.jpg" >
+              Bouquets
+          </a>
+      </div>
+
+      <div class="grid-item">
+          <a href="H.html">
+              <img src="photos/H/H.jpg" >
+              Wedding treats
+          </a>
+      </div>
+
+      
+      <div class="grid-item">
+        <a href="F.html">
+            <img src="photos/F/F.jpg" >
+            Dinners
+        </a>
+    </div>
+
+      
+
+  </div>
 
     </section>
 

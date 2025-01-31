@@ -13,7 +13,12 @@ ul {
 }
 
 
-
+a{
+  
+  font-family: "Comfortaa", serif;
+  color: rgb(71, 66, 66);
+  font-weight: lighter;
+}
 
 p ,p4{
   font-family: "Comfortaa", serif;
@@ -258,6 +263,11 @@ margin-bottom: 20px;
   font-weight: lighter;
   }
 
+  .menu-toggle:hover {
+    
+    color: rgba(60, 55, 48, 0.534);
+  }
+
 
 
 }
@@ -414,18 +424,8 @@ header:hover {
   .section-afnan {
     scroll-margin-top: 80px;
     padding: 10px;
-
+    margin-top: 50px;
     text-align: center;
-    background-image: linear-gradient(rgba(255, 255, 255, 0.7), rgba(255, 255, 255, 0.7)), url('photos/icon2.png');
-    /* Apply a semi-transparent white overlay on top of the image */
-    background-color: rgba(145, 142, 142, 0.9);
-    /* Optional base color */
-    background-blend-mode: overlay;
-    /* Blend overlay effect */
-
-    background-position: center;
-    /* Center the image */
-
   }
 
 }
@@ -752,7 +752,7 @@ h2 {
 }
 
 .contact-h4 {
-  font-size: medium;
+  font-size: smaller;
   text-decoration: wavy;
 }
 
@@ -901,24 +901,7 @@ h4 {
   /* Reduced margin for smaller screens */
 }
 
-.menu-toggle-back {
 
-  display: block;
-  font-size: 2em;
-  /* Scales with the container */
-  padding-right: 80px;
-  color: #dd0c0c;
-  /* Show the toggle button on small screens */
-  width: 10vw;
-  /* Width as a percentage of the viewport width */
-  height: auto;
-  /* Height adjusts automatically to maintain proportions */
-  align-items: flex-start;
-  border: 0;
-  padding-right: auto;
-  padding: 40px;
-  background-color: rgba(0, 0, 0, 0)
-}
 
 
 
@@ -1216,7 +1199,7 @@ h4 {
 
 .slides-wel img {
   width: 100%;
-  max-height: 530px;
+  max-height: 700px;
   /* Restrict image height */
   object-fit: contain;
   /* Ensure the image scales proportionally */
@@ -1226,7 +1209,7 @@ h4 {
 @media (max-width: 780px) {
 
   .slides-wel img {
-    display: none;
+  
   }
 
 }
@@ -1362,6 +1345,7 @@ h4 {
 
   .wel-vid {
     height: 32%;
+    display: none;
 
   }
 
