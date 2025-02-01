@@ -569,7 +569,7 @@ h2 {
   line-height: 1.7;
   font-weight: bold;
 
-  font-size: medium;
+  font-size: small;
 
 }
 
@@ -754,6 +754,8 @@ h2 {
 .contact-h4 {
   font-size: smaller;
   text-decoration: wavy;
+  text-transform: capitalize;
+  
 }
 
 
@@ -788,7 +790,7 @@ h2 {
 
 
 .elm {
-  width: 150px;
+  width: 100px;
   height: auto;
 }
 
@@ -796,7 +798,7 @@ h2 {
 
   width: 150px;
   height: auto;
-  background-color: #bbb9b961;
+  background-color: #bbb9b934;
   transition: 3s;
   border-radius: 70%;
 
