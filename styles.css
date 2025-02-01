@@ -1,3 +1,4 @@
+/*basic styles*/
 li {
 
   text-align: center;
@@ -7,24 +8,11 @@ ul {
   justify-items: center;
 }
 
-.bg-img {
-  opacity: 0.4;
-  margin-bottom: 0;
-}
+a {
 
-
-a{
-  
   font-family: "Comfortaa", serif;
-  color: rgb(71, 66, 66);
+  color: rgb(191, 28, 28);
   font-weight: lighter;
-}
-
-p ,p4{
-  font-family: "Comfortaa", serif;
-  color: rgb(71, 66, 66);
-  font-weight: lighter;
-  text-transform: capitalize;
 }
 
 body {
@@ -32,10 +20,10 @@ body {
   font-family: "Comfortaa", serif;
   color: rgb(71, 66, 66);
   font-weight: lighter;
-  
+
   background: rgb(224, 222, 224);
- 
-max-width: 100%;
+
+  max-width: 100%;
 
 
 }
@@ -47,67 +35,55 @@ h3,
 h4 {
   font-family: "Comfortaa", serif;
   color: rgb(71, 66, 66);
-  font-size:22px;
-  text-transform:uppercase;
+  font-size: 22px;
+  text-transform: uppercase;
   font-weight: lighter;
 }
-
-
 
 p {
   font-family: "Comfortaa", serif;
   color: rgb(60, 55, 48);
   font-weight: lighter;
-  text-transform:lowercase;
+  text-transform: lowercase;
 }
 
 
 
 
 
-
+/*basic styles when screen gets smaller*/
 @media (max-width: 768px) {
- 
-body {
 
-  font-family: "Comfortaa", serif;
-  color: rgb(71, 66, 66);
-  font-weight: lighter;
-  
-  background: rgb(224, 222, 224);
- 
-max-width: 100%;
+  body {
 
+    font-family: "Comfortaa", serif;
+    color: rgb(71, 66, 66);
+    font-weight: lighter;
+    background: rgb(224, 222, 224);
+    max-width: 100%;
 
-}
+  }
 
+  h1,
+  h2,
+  h3,
+  h4 {
+    font-family: "Comfortaa", serif;
+    color: rgb(71, 66, 66);
+    font-size: medium;
+    text-transform: uppercase;
+    font-weight: lighter;
+  }
 
-h1,
-h2,
-h3,
-h4 {
-  font-family: "Comfortaa", serif;
-  color: rgb(71, 66, 66);
-  font-size: medium;
-  text-transform:uppercase;
-  font-weight: lighter;
-}
-
-
-
-p {
-  font-family: "Comfortaa", serif;
-  color: rgb(60, 55, 48);
-  font-weight: lighter;
-  font-size: small;
-  text-transform:lowercase;
-}
-
+  p {
+    font-family: "Comfortaa", serif;
+    color: rgb(60, 55, 48);
+    font-weight: lighter;
+    font-size: small;
+    text-transform: lowercase;
+  }
 
 }
-
-
-
 
 
 
@@ -121,7 +97,7 @@ main {
 
 
 
-/* Hamburger menu button for mobile */
+/*  menu button for mobile */
 .menu-toggle {
   display: none;
   font-size: 15px;
@@ -160,25 +136,34 @@ main {
   header {
     display: flex;
     font-family: "Comfortaa", serif;
-    justify-content: center; /* Center all items horizontally */
-    align-items: center; /* Center all items vertically */
-    border-bottom: 1px solid #ddd; /* Optional border for styling */
-    gap: 10%; /* Adjusts space between child elements */
-    width: 100%; /* Full width of the viewport */
+    justify-content: center;
+    /* Center all items horizontally */
+    align-items: center;
+    /* Center all items vertically */
+    border-bottom: 1px solid #ddd;
+    /* Optional border for styling */
+    gap: 10%;
+    /* Adjusts space between child elements */
+    width: 100%;
+    /* Full width of the viewport */
     text-align: center;
-    top: 0; /* Sticks the header to the top */
-    position: fixed; /* Keeps the header fixed while scrolling */
-    padding: 15px; /* Space inside the header */
+    top: 0;
+    /* Sticks the header to the top */
+    position: fixed;
+    /* Keeps the header fixed while scrolling */
+    padding: 15px;
+    /* Space inside the header */
     column-gap: 0px;
-    z-index: 1000; /* Ensures the header is above content */
+    z-index: 1000;
+    /* Ensures the header is above content */
 
   }
-  
+
 
   .menu {
     display: none;
     /* Hide the menu initially */
-    
+
     /* Stack the menu items vertically */
     padding: 1rem;
     /* Optional: Add padding for dropdown */
@@ -205,19 +190,19 @@ main {
   }
 
   .menu ul {
-width: 100%;
+    width: 100%;
     font-size: smaller;
     /*nothing changes*/
-margin-bottom: 20px;
+    margin-bottom: 20px;
     color: rgb(60, 55, 48);
-    border-bottom:  2px solid #0c0b0b3f;
+    border-bottom: 2px solid #0c0b0b3f;
 
   }
 
   .menu.active {
     display: flex;
     /* Show the dropdown menu when active */
-   
+
     padding: 0px;
     font-size: xx-small;
     width: 100%;
@@ -228,14 +213,14 @@ margin-bottom: 20px;
     font-size: small;
     line-height: 2.5em;
     font-family: "Comfortaa", serif;
-  color: rgb(71, 66, 66);
-  font-weight: lighter;
-  text-transform:uppercase;
+    color: rgb(71, 66, 66);
+    font-weight: lighter;
+    text-transform: uppercase;
   }
 
   .menu-toggle {
     display: block;
-    
+
     /* Scales with the container */
     padding-right: 0;
     /* Remove padding that shifts alignment */
@@ -259,12 +244,12 @@ margin-bottom: 20px;
     margin-right: 0px;
     margin-top: 10px;
     margin-bottom: 10px;
-    text-transform:uppercase;
-  font-weight: lighter;
+    text-transform: uppercase;
+    font-weight: lighter;
   }
 
   .menu-toggle:hover {
-    
+
     color: rgba(60, 55, 48, 0.534);
   }
 
@@ -321,12 +306,12 @@ header:hover {
   list-style: none;
   padding: 0;
   margin: 0;
-  
- 
+
+
   gap: 40px;
   column-gap: 10px;
   background: rgba(224, 222, 224, 0.774);
-  
+
 
 }
 
@@ -342,7 +327,7 @@ header:hover {
   font-family: "Comfortaa", serif;
   color: rgb(71, 66, 66);
   font-weight: lighter;
-  text-transform:uppercase;
+  text-transform: uppercase;
   padding: 5px 10px;
   transition: color 0.3s ease;
 }
@@ -473,7 +458,7 @@ header:hover {
   height: 680px;
   display: flex;
   padding-top: 0px;
-gap: 0px;
+  gap: 0px;
   row-gap: 0px;
   padding-bottom: 0px;
   flex-direction: column;
@@ -518,7 +503,7 @@ gap: 0px;
   .welcome-icon {
     display: inline;
     height: 130px;
-    
+
     margin-bottom: 30px;
 
 
@@ -544,18 +529,11 @@ gap: 0px;
 
 
 
-
+/*testimonials section styles*/
 .container {
   max-width: 1200px;
   margin: auto;
   padding: 15px;
-}
-
-h2 {
-  font-family: "Comfortaa", serif;
-  padding-top: 20px;
-  padding-bottom: 20px;
-  margin: 0;
 }
 
 .testimonial {
@@ -568,9 +546,29 @@ h2 {
   font-family: "Comfortaa", serif;
   line-height: 1.7;
   font-weight: bold;
+  color: rgba(71, 66, 66, 0.784);
+  font-size: medium;
 
-  font-size: small;
+}
 
+.author {
+
+  color: rgba(71, 66, 66, 0.784);
+}
+
+@media (max-width: 768px) {
+
+
+  .testimonial-p {
+
+    font-size: smaller;
+
+  }
+
+  .author {
+
+    font-size: x-small;
+  }
 }
 
 
@@ -585,8 +583,7 @@ h2 {
 
 
 
-
-
+/*about section styles*/
 .about-container {
   display: flex;
   align-items: center;
@@ -610,37 +607,16 @@ h2 {
   border-radius: 10px;
 }
 
-@media (max-width: 768px) {
-  .about-image {
-    display: none;
-    /* Hide the image container */
-  }
-}
-
 .about-content {
   flex: 1;
   padding-left: 40px;
 }
-
-@media (max-width: 768px) {
-  .about-content {
-    flex: 1 1 100%;
-    /* Allow it to take the full width */
-    padding-left: 0;
-    /* Remove left padding for better alignment */
-    text-align: center;
-    /* Optional: Center-align the text if needed */
-  }
-}
-
-
 
 .about-content p {
   font-size: smaller;
   line-height: 1.9;
   text-align: left;
 }
-
 
 @media (max-width: 768px) {
 
@@ -649,6 +625,10 @@ h2 {
 
   }
 
+  .about-image {
+    display: none;
+    /* Hide the image container */
+  }
 
   .about-container {
     display: flex;
@@ -661,6 +641,14 @@ h2 {
 
   }
 
+  .about-content {
+    flex: 1 1 100%;
+    /* Allow it to take the full width */
+    padding-left: 0;
+    /* Remove left padding for better alignment */
+    text-align: center;
+    /* Optional: Center-align the text if needed */
+  }
 
 }
 
@@ -671,7 +659,7 @@ h2 {
 
 
 
-
+/*contact section styles*/
 .contact-icons {
   display: flex;
   gap: 30px;
@@ -713,6 +701,14 @@ h2 {
   color: #fff;
 }
 
+.contact-h4 {
+
+  font-size: smaller;
+  text-decoration: wavy;
+  text-transform: capitalize;
+
+}
+
 /* Responsive styles for smaller screens */
 @media (max-width: 768px) {
   .contact-icons {
@@ -732,43 +728,6 @@ h2 {
   }
 }
 
-@media (max-width: 480px) {
-  .contact-icons {
-    gap: 15px;
-    /* Further reduce gap */
-  }
-
-  .contact-icons i {
-    width: 40px;
-    /* Even smaller icon size */
-    height: 40px;
-  }
-
-  .contact-icons a {
-    font-size: 1.2rem;
-    /* Smaller font size for mobile */
-  }
-
-}
-
-.contact-h4 {
-  font-size: smaller;
-  text-decoration: wavy;
-  text-transform: capitalize;
-  
-}
-
-
-
-.body-div {
-  width: 100%;
-
-  font-family: "Comfortaa", serif;
-  justify-content: center;
-  align-items: center;
-  height: 20vh;
-  margin: 0;
-}
 
 
 
@@ -778,6 +737,9 @@ h2 {
 
 
 
+
+
+/*developer name styles*/
 .e-name {
   margin-top: 0px;
   font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
@@ -786,14 +748,13 @@ h2 {
   font-size: 0.6rem;
 }
 
-
-
-
+/*elm logo styles*/
 .elm {
   width: 100px;
   height: auto;
 }
 
+/*elm logo styles when hover*/
 .elm:hover {
 
   width: 150px;
@@ -804,7 +765,7 @@ h2 {
 
 }
 
-
+/*footer styles*/
 footer {
   text-align: center;
   padding: 20px;
@@ -839,24 +800,7 @@ footer {
 
 
 
-p {
-  font-family: "Comfortaa", serif;
-}
 
-
-
-h1,
-h2,
-h3,
-h4 {
-  font-family: "Comfortaa", serif;
-}
-
-
-.logo-gallery {
-  width: 12%;
-  padding-right: 30px;
-}
 
 /* General grid styling */
 .photo-grid {
@@ -989,110 +933,6 @@ h4 {
 }
 
 
-.arrow {
-  position: absolute;
-  top: 50%;
-  transform: translateY(-50%);
-  background: transparent;
-  border: none;
-  font-size: 24px;
-  cursor: pointer;
-}
-
-.arrow.left {
-  left: 10px;
-}
-
-.arrow.right {
-  right: 10px;
-}
-
-
-
-
-
-
-
-/* Photo item styling */
-.photo-item1 {
-
-  /* Reduced padding for smaller items on smaller screens */
-  text-align: center;
-  font-size: 18px;
-  font-weight: bold;
-  margin-bottom: 10px;
-  position: relative;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  padding: 10px;
-  /* Add padding around the div */
-  height: 30rem;
-  padding-left: 0px;
-  padding-right: 0px;
-}
-
-.category-label {
-  text-align: center;
-  font-size: 18px;
-  font-weight: bold;
-  margin-bottom: 10px;
-}
-
-/* Image styling */
-.photo-item1 img {
-  width: 100%;
-  height: 100%;
-  max-width: 100%;
-  /* Ensures images fit properly */
-  display: block;
-  /* Prevents extra spacing under images */
-  display: none;
-}
-
-.photo-item1 img.active {
-  width: 100%;
-  height: 100%;
-  display: block;
-}
-
-
-
-
-/* Photo item styling */
-.photo-item2 {
-  text-align: center;
-  background: white;
-  overflow: hidden;
-  border-radius: 10px;
-  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
-  padding: 10px;
-  position: relative;
-  height: 15rem;
-  max-width: 700px;
-  overflow: hidden;
-  /* Reduced padding for smaller items on smaller screens */
-}
-
-/* Image styling */
-.photo-item2 img {
-  width: 100%;
-  height: 100%;
-
-  display: none;
-}
-
-.photo-item2 img.active {
-  width: 100%;
-  height: 100%;
-  display: block;
-}
-
-
-
-
-
-
 
 
 
@@ -1208,37 +1048,23 @@ h4 {
   flex-shrink: 0;
 }
 
-@media (max-width: 780px) {
+
+
+
+
+
+
+/*hide welcome page slides picture when screen is bigger that 780px*/
+@media (min-width: 780px) {
 
   .slides-wel img {
-  
+
+    display: none;
+
   }
-
 }
 
-.arrow {
-  position: absolute;
-  top: 50%;
-  transform: translateY(-50%);
-  background: rgba(36, 36, 36, 0.3);
-  color: rgba(227, 222, 222, 0.469);
-  border: none;
-  padding: 8px;
-  cursor: pointer;
-  z-index: 3;
-}
 
-.arrow.left {
-  left: 8px;
-}
-
-.arrow.right {
-  right: 8px;
-}
-
-.arrow:hover {
-  background: rgba(0, 0, 0, 0.8);
-}
 
 
 
@@ -1342,11 +1168,11 @@ h4 {
 
 
 
-
+/*hides welcome page video when page is smaller */
 @media (max-width: 768px) {
 
   .wel-vid {
-    height: 32%;
+
     display: none;
 
   }
@@ -1357,8 +1183,8 @@ h4 {
 
 
 
-
-.wel-h1{
+/*h1 in welcome page styles */
+.wel-h1 {
   margin-top: 0px;
   margin-bottom: 5px;
 }
