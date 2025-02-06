@@ -616,7 +616,11 @@ header:hover {
   font-size: smaller;
   line-height: 1.9;
   text-align: left;
+  animation-name: slideleft;
+  animation-duration: 1s;
 }
+
+
 
 @media (max-width: 768px) {
 
@@ -717,13 +721,13 @@ header:hover {
   }
 
   .contact-icons i {
-    width: 50px;
+    width: 30px;
     /* Smaller icon size */
-    height: 50px;
+    height: 30px;
   }
 
   .contact-icons a {
-    font-size: 1.5rem;
+    font-size: 1.2rem;
     /* Adjust font size */
   }
 }
@@ -958,11 +962,11 @@ footer {
 
 .grid-container {
   display: grid;
-  grid-template-columns: 1fr;
-  gap: 40px;
-  /* Reduced gap */
-  padding: 10px;
-  padding-top: 20px;
+      grid-template-columns: repeat(2, 1fr);
+      gap: 20px;
+      padding: 5px;
+      max-width: 800px;
+      margin: auto;
   justify-items: center;
 }
 
@@ -974,19 +978,45 @@ footer {
   }
 }
 
-.grid-item {
+.grid-item-l {
   position: relative;
-  background: #605f5f12;
-  border-radius: 8px;
   overflow: hidden;
-  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+  text-align: center;
+  background: #e0dee0;
+  box-shadow: none;
+  border-radius: 0px;
   font-size: 0.85rem;
   padding: 10px;
-
   /* Allow height to adjust dynamically */
-  text-align: center;
   width: 89%;
+  animation-name: slideleft;
+  animation-duration: 0.5s;
 }
+
+
+.grid-item-r {
+  position: relative;
+  overflow: hidden;
+  text-align: center;
+  background: #e0dee0;
+  box-shadow: none;
+  border-radius: 0px;
+  font-size: 0.85rem;
+  padding: 10px;
+  /* Allow height to adjust dynamically */
+  width: 89%;
+  animation-name: slideright;
+  animation-duration: 0.5s;
+}
+
+@keyframes slideleft{
+  from{transform: translateX(-100%);}
+}
+
+@keyframes slideright{
+  from{transform: translateX(100%);}
+}
+
 
 @media (max-width: 780px) {
 
@@ -1003,6 +1033,22 @@ footer {
     text-align: center;
     width: 100%;
   }
+}
+
+
+
+.grid-item-r img,.grid-item-l img {
+  width: 100%;
+  border-radius: 10px;
+}
+
+.grid-item-r a,.grid-item-l a {
+  display: block;
+  text-decoration: none;
+  color: black;
+  font-size: medium;
+  font-weight: lighter;
+  margin-top: 5px;
 }
 
 .label {
